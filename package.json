@@ -4,14 +4,21 @@
   "description": "Bootpay Rest Client Javasrcipt Library",
   "main": "lib/bootpay.js",
   "dependencies": {
-    "axios": "^0.21.0"
+    "@bootpay/server-rest-client": "^1.0.8",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon main.js",
+    "start": "node main.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bootpay/server_nodejs"
+    "url": "git+https://github.com/bootpay/server_nodejs.git"
   },
   "keywords": [
     "결제",
@@ -27,5 +34,10 @@
   "bugs": {
     "url": "https://github.com/bootpay/server_nodejs/issues"
   },
-  "homepage": "https://docs.bootpay.co.kr"
+  "homepage": "https://docs.bootpay.co.kr",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "devDependencies": {}
 }
