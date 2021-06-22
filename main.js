@@ -1,19 +1,18 @@
-require('dotenv').config()
 
 
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
+require('dotenv').config()
 
 
 const user = require('./routes/user');
 const evalbootpay = require('./routes/evalBootpay');   // 부트 페이 결제 검증 
 
 //CORS 이슈 
-app.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", '*');
-});
+app.use(cors());
 
 app.use(bodyParser.json());
 app.use(morgan('dev'));
