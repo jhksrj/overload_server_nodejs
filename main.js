@@ -21,9 +21,8 @@ app.use('/user', user);
 app.use('/evalbootpay', evalbootpay);  //부트페이 결제 검증 
 
 app.get('/', function (req, res) {
-  res.send("hello woooorld")
+  res.send("오버로드 서버입니다.")
 })
-
 
 
 app.listen(process.env.PORT || 3000, function () {

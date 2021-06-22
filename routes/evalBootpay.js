@@ -48,8 +48,7 @@ router.post('/', function (req, res) {
     }
   });
 
-
-  res.json({ success: "Payments Evaluated" });
+  res.json({ success: "결제 검증 완료되었습니다." });
 });
 
 
